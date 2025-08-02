@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { Calendar, Users, MapPin, Clock } from "lucide-react";
+import {  Users, MapPin, Clock } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const packages = [
