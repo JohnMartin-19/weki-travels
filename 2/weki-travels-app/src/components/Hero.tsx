@@ -9,7 +9,7 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-5xl text-white mb-6">
-              Discover Amazing <span className="text-blue-200">Travel Experiences</span> with Weki Travels
+              Discover Amazing <span className="text-blue-200">Travel Experiences</span> with <strong className="text-orange-400">Weki Travels</strong>
             </h1>
             <p className="text-xl text-gray-100 mb-8">
               Your trusted travel partner in Nairobi. We specialize in international destinations across Europe and the Middle East, creating unforgettable journeys with expertly crafted itineraries and personalized service.
@@ -42,7 +42,7 @@ export function Hero() {
 
           <div className="lg:text-center relative">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="https://plus.unsplash.com/premium_photo-1661501359079-b362cda0d5d0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Beautiful travel destination landscape"
               className="rounded-lg shadow-xl w-full h-auto"
             />

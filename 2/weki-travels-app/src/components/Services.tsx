@@ -80,9 +80,9 @@ export function Services() {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-50">
+                {/* <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-50">
                   Learn More
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           ))}

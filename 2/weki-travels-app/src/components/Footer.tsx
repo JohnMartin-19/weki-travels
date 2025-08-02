@@ -2,7 +2,8 @@ import { Separator } from "./ui/separator";
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, Plane } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear(); 
+
   return (
     <footer className="bg-blue-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -33,7 +34,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Popular Destinations */}
+          
           <div>
             <h3 className="text-lg mb-4">Popular Destinations</h3>
             <ul className="space-y-2 text-gray-300">
@@ -80,13 +81,20 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-          © {currentYear} Weki Travels. All rights reserved.
+            © {currentYear} Weki Travels. All rights reserved.
           </p>
+          <a
+              href="mailto:johnnkonge2020@gmail.com?subject=Inquiry from Weki Travels Website&body=Hello developer,"
+              className="hover:text-orange-400 transition-colors"
+            >
+              <small>Contact Developer?</small>
+            </a>
           <div className="flex space-x-6 text-sm text-gray-300 mt-4 md:mt-0">
             <a href="#" className="hover:text-orange-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-orange-400 transition-colors">Terms & Conditions</a>
             <a href="#" className="hover:text-orange-400 transition-colors">Travel Insurance</a>
             <a href="#" className="hover:text-orange-400 transition-colors">Booking Terms</a>
+           
           </div>
         </div>
       </div>

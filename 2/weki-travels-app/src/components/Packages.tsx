@@ -6,14 +6,14 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const packages = [
   {
-    title: "Kenya Safari Explorer",
+    title: "The Blue Lagoon, Malta",
     duration: "7 Days",
     groupSize: "4-8 People",
-    price: "KSh 45,000",
-    originalPrice: "KSh 55,000",
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    destinations: ["Maasai Mara", "Amboseli", "Lake Nakuru"],
-    highlights: ["Big Five Safari", "Hot Air Balloon", "Maasai Cultural Visit"],
+    price: "KSh 145,000",
+    originalPrice: "KSh 155,000",
+    image: "https://images.unsplash.com/photo-1545298846-79dd1f8f391c?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    destinations: ["Valetta", "Mdina", "Guzo"],
+    highlights: ["Sunset Boat Rides", "Deep Sea Diving", "Touring the cities"],
     badge: "Popular"
   },
   {
@@ -22,20 +22,20 @@ const packages = [
     groupSize: "2-6 People",
     price: "KSh 32,000",
     originalPrice: "KSh 40,000",
-    image: "https://images.unsplash.com/photo-1544906503-4ad96ac882d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1621583628955-42fbc37bf424?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     destinations: ["Stone Town", "Nungwi Beach", "Jozani Forest"],
     highlights: ["Spice Tour", "Dolphin Watching", "Sunset Dhow Cruise"],
     badge: "Best Value"
   },
   {
-    title: "Kilimanjaro Adventure",
+    title: "Dubai, UAE",
     duration: "8 Days",
     groupSize: "2-12 People",
     price: "KSh 125,000",
     originalPrice: "KSh 145,000",
-    image: "https://images.unsplash.com/photo-1589182373726-e4f98b5c3cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    destinations: ["Machame Route", "Uhuru Peak", "Mweka Camp"],
-    highlights: ["Summit Attempt", "Professional Guides", "All Equipment"],
+    image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    destinations: ["Dubai, City", "Burj Khalifa", "Urban City"],
+    highlights: ["Desert Fun", "Professional Guides", "Rich Culture"],
     badge: "Adventure"
   }
 ];

@@ -62,6 +62,7 @@ export function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
+              <p className="text-gray-600">International House, 1st Floor</p>
                 <p className="text-gray-600">Nairobi, Kenya</p>
                 <p className="text-sm text-gray-500 mt-1">CBD - Easy access location</p>
               </CardContent>

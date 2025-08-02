@@ -22,7 +22,7 @@ const destinations = [
   {
     name: "Croatia 🇭🇷",
     country: "Dubrovnik & Split",
-    image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1575540291670-8d3b26f7d327?q=80&w=1878&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4.9,
     price: "KSh 95,000",
     description: "Mediterranean coastline and medieval architecture"
