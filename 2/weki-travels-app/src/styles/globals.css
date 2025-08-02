@@ -1,8 +1,74 @@
+/* src/globals.css */
+
 @import "tailwindcss";
+
+/* --- General HTML/Body/Font Resets (from old index.css) --- */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark; /* Keep this for browser preference */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  /* Keep or remove based on whether you want direct non-Tailwind heading sizes */
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* !!!! IMPORTANT: REMOVE THIS ENTIRE BUTTON BLOCK !!!!
+   !!!! It conflicts directly with Shadcn/ui's button component styling. !!!!
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+*/
+
+
+/* --- Shadcn/Tailwind Theme Variables and Layers --- */
+
 @custom-variant dark (&:is(.dark *));
 
-:root {
+:root { /* This :root is for your custom design system variables */
+  /* Font size (used by base typography later) */
   --font-size: 14px;
+
+  /* Colors for Light Theme */
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
@@ -23,8 +89,6 @@
   --input: transparent;
   --input-background: #f3f3f5;
   --switch-background: #cbced4;
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -40,9 +104,13 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Font weights (these should probably be in theme config for Tailwind) */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
 }
 
-.dark {
+.dark { /* Colors for Dark Theme */
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.145 0 0);
@@ -62,8 +130,6 @@
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -79,7 +145,7 @@
   --sidebar-ring: oklch(0.439 0 0);
 }
 
-@theme inline {
+@theme inline { /* Shadcn/ui theme mapping */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -126,7 +192,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground; /* Use your theme vars */
   }
 }
 
@@ -135,56 +201,48 @@
  */
 @layer base {
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    html {
+      font-size: var(--font-size); /* Keep this as it uses your custom var */
+    }
     h1 {
-      font-size: var(--text-2xl);
+      font-size: var(--text-2xl); /* Make sure these --text-xl vars are defined in tailwind.config.js */
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
-
     h2 {
       font-size: var(--text-xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
-
     h3 {
       font-size: var(--text-lg);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
-
     h4 {
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
-
     p {
       font-size: var(--text-base);
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
     }
-
     label {
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
-
     button {
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
-
     input {
       font-size: var(--text-base);
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
     }
   }
-}
-
-html {
-  font-size: var(--font-size);
 }
