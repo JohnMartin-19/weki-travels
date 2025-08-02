@@ -2,6 +2,7 @@ import { Separator } from "./ui/separator";
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, Plane } from "lucide-react";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-blue-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -79,7 +80,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-            © 2024 Weki Travels. All rights reserved.
+          © {currentYear} Weki Travels. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-300 mt-4 md:mt-0">
             <a href="#" className="hover:text-orange-400 transition-colors">Privacy Policy</a>

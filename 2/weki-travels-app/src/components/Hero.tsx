@@ -19,7 +19,7 @@ export function Hero() {
               <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
                 Plan Your Trip
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+              <Button size="lg" variant="outline" className="border-white text-orange hover:bg-white hover:text-blue-600">
                 Browse Packages
               </Button>
             </div>

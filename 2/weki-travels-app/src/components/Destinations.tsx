@@ -22,7 +22,7 @@ const destinations = [
   {
     name: "Croatia 🇭🇷",
     country: "Dubrovnik & Split",
-    image: "https://images.unsplash.com/photo-1555990538-c58d6e3b34b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     rating: 4.9,
     price: "KSh 95,000",
     description: "Mediterranean coastline and medieval architecture"
@@ -38,7 +38,7 @@ const destinations = [
   {
     name: "Malta 🇲🇹",
     country: "Valletta & Gozo",
-    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: 'https://images.unsplash.com/photo-1753982687273-188d17127327?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 4.6,
     price: "KSh 90,000",
     description: "Ancient temples, crystal waters, and historic fortresses"
@@ -54,7 +54,7 @@ const destinations = [
   {
     name: "Kuwait 🇰🇼",
     country: "Kuwait City",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1753395850333-52da1fb9ba3c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4.5,
     price: "KSh 105,000",
     description: "Modern skylines, traditional souks, and desert experiences"
@@ -70,7 +70,7 @@ const destinations = [
   {
     name: "Qatar 🇶🇦",
     country: "Doha",
-    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1753395850874-b6c150b13795?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4.6,
     price: "KSh 125,000",
     description: "Futuristic architecture, cultural museums, and Arabian heritage"
@@ -86,7 +86,7 @@ const destinations = [
   {
     name: "Finland 🇫🇮",
     country: "Helsinki & Lapland",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1594279761639-cb1787798b52?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4.7,
     price: "KSh 145,000",
     description: "Aurora borealis, reindeer safaris, and midnight sun"
