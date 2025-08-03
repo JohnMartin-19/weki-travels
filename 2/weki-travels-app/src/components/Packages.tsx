@@ -117,7 +117,7 @@ export function Packages() {
                 </div>
 
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
-                  Book Package
+                  <a href="#contact"> Book Package</a>
                 </Button>
               </CardContent>
             </Card>

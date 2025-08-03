@@ -34,7 +34,7 @@ export function Header() {
               <span>+254 712 345 678</span>
             </div>
             <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-              Book Now
+              <a href="#contact">Book Now</a>
             </Button>
           </div>
 

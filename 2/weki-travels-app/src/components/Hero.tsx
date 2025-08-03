@@ -9,7 +9,7 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-5xl text-white mb-6">
-              Discover Amazing <span className="text-blue-200">Travel Experiences</span> with <strong className="text-orange-400">Weki Travels</strong>
+              Discover Amazing <span className="text-blue-200">Travel Experiences</span> with <span className="text-orange-400">Weki Travels</span>
             </h1>
             <p className="text-xl text-gray-100 mb-8">
               Your trusted travel partner in Nairobi. We specialize in international destinations across Europe and the Middle East, creating unforgettable journeys with expertly crafted itineraries and personalized service.
@@ -17,10 +17,10 @@ export function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
-                Plan Your Trip
+               <a href="#contact"> Plan Your Trip</a>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-orange hover:bg-white hover:text-blue-600">
-                Browse Packages
+               <a href="#packages"> Browse Packages</a>
               </Button>
             </div>
 
@@ -35,7 +35,7 @@ export function Hero() {
               </div>
               <div className="text-center">
                 <Users className="h-8 w-8 text-orange-400 mx-auto mb-2" />
-                <p className="text-sm text-gray-100">Expert Guides</p>
+                <p className="text-sm text-gray-100">Excellent Customer Service</p>
               </div>
             </div>
           </div>
