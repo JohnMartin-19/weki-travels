@@ -12,7 +12,7 @@ export function Header() {
           <div className="flex items-center">
             <div className="flex items-center text-2xl">
               <Plane className="h-8 w-8 text-blue-600 mr-2" />
-              <span className="text-primary">Weki</span>
+              <span className="text-orange-600">Weki</span>
               <span className="text-blue-600 ml-2">Travels</span>
             </div>
           </div>

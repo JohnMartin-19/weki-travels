@@ -27,7 +27,7 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
                 <MapPin className="h-8 w-8 text-orange-400 mx-auto mb-2" />
-                <p className="text-sm text-gray-100">50+ Destinations</p>
+                <p className="text-sm text-gray-100">15+ Destinations</p>
               </div>
               <div className="text-center">
                 <Calendar className="h-8 w-8 text-orange-400 mx-auto mb-2" />

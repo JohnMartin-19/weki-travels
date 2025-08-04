@@ -4,9 +4,9 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function About() {
   const stats = [
-    { icon: Users, number: "2,500+", label: "Happy Travelers" },
-    { icon: Award, number: "12+", label: "Years Experience" },
-    { icon: MapPin, number: "50+", label: "Destinations" },
+    { icon: Users, number: "250+", label: "Happy Travelers" },
+    { icon: Award, number: "1+", label: "Years Experience" },
+    { icon: MapPin, number: "15+", label: "Destinations" },
     { icon: Clock, number: "24/7", label: "Customer Support" }
   ];
 
@@ -19,7 +19,7 @@ export function About() {
               About Weki Travels
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Based in the heart of Nairobi, Weki Travels has been creating exceptional international travel experiences for over 12 years. We specialize in connecting Kenyan travelers with the rich cultures, historic cities, and stunning landscapes of Europe and the Middle East.
+              Based in the heart of Nairobi, Weki Travels has been creating exceptional international travel experiences for over 1 year. We specialize in connecting Kenyan travelers with the rich cultures, historic cities, and stunning landscapes of Europe and the Middle East.
             </p>
             <p className="text-lg text-gray-600 mb-6">
               Our team of experienced travel consultants understands that every international journey is unique. Whether you're seeking European cultural exploration, Middle Eastern luxury experiences, or Nordic adventures, we craft personalized itineraries that exceed expectations.
