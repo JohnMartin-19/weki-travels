@@ -1,6 +1,6 @@
 # .github/workflows/deploy-to-netlify.yaml
 
-name: Deploy React App to Netlify
+name: Deploy Weki Travels site to Netlify
 
 on:
   push:
