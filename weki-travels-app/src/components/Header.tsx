@@ -31,7 +31,7 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center text-primary">
               <Phone className="h-4 w-4 mr-2" />
-              <span>+254 712 345 678</span>
+              <span>+254792136318</span>
             </div>
             <Button className="bg-orange-500 hover:bg-orange-600 text-white">
               <a href="#contact">Book Now</a>

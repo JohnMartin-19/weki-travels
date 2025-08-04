@@ -43,7 +43,7 @@ export function About() {
 
           <div>
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="https://plus.unsplash.com/premium_photo-1661964380285-35671516d887?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Nairobi city skyline and travel office"
               className="rounded-lg shadow-xl w-full h-auto"
             />

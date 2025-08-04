@@ -1,0 +1,51 @@
+# .github/workflows/deploy-to-netlify.yaml
+
+name: Deploy React App to Netlify
+
+on:
+  push:
+    branches:
+      - main 
+  pull_request:
+    branches:
+      - main
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' 
+          cache: 'npm' 
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build 
+        
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v20.0 
+        with:
+          publish-dir: './dist' 
+          production-branch: 'main'
+          github-token: ${{ secrets.GITHUB_TOKEN }} 
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }} 
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }} 
+
+        env:
+          # Optional: If you have environment variables that need to be available during the Netlify build/deploy
+          # For example, if your Vite app uses import.meta.env.VITE_API_URL that needs to be different in production.
+          # VITE_API_URL: ${{ secrets.VITE_PROD_API_URL }}
+          # Netlify automatically picks up environment variables defined in its UI,
+          # but you can also pass them here if they are GitHub secrets.
+          # For client-side React apps, these variables are typically baked into the build,
+          # so they usually don't need to be set directly in the Netlify Action env.
+          # However, if your Netlify build command itself uses environment variables, you'd put them here.
+          CI: true # Required for some CI environments to treat warnings as errors

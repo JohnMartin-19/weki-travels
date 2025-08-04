@@ -36,7 +36,7 @@ export function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">+254 712 345 678</p>
+                <p className="text-gray-600">+254792136318</p>
                 <p className="text-sm text-gray-500 mt-1">WhatsApp available</p>
               </CardContent>
             </Card>
